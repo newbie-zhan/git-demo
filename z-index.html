@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>层叠</title>
+	<style type="text/css">
+		.a,
+		.s,
+		.d{
+			position: absolute;
+			/*top: 50px;
+			left: 50px;*/
+
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+		}
+		.a {
+			z-index: 2;
+		}
+		.s{
+			z-index: 1;
+			top: 50px;
+			left: 50px;
+			background-color: red;
+		}
+		.d {
+			
+			top: 100px;
+			left: 100px;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="a"></div>
+	<div class="s"></div>
+	<div class="d"></div>
+</body>
+</html>

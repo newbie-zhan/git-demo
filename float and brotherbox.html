@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*f为父级，但是很多情况下，不方便给高度 自盒子有多少内容，就显示多少内容，自动撑开父亲最为合理*/
+		.f {
+			height: 500px;
+			width: 500px;
+			background-color: pink;
+		}
+		.f2 {
+			width: 700px;
+			height: 150px;
+			background-color: skyblue;
+		}
+		.s1 {
+			/*float: left;*/
+			height: 200px;
+			width: 200px;
+			background-color: orange;
+
+		}
+		.s2 {
+			float: left;
+			height: 300px;
+			width: 250px;
+			background-color: purple;
+		}
+	</style>
+</head>
+<body>
+	<div class="f">
+		<div class="s1"></div>
+		<div class="s2"></div>
+	</div>
+	<div class="f2"></div>
+</body>
+</html>

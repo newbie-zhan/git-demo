@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*浮动元素之间默认没有缝隙 和真正的行内快不同*/
+		.one,
+		.two,
+		.three {
+			height: 200px;
+			width: 200px;
+			background-color: pink;
+		}
+		.one {
+			float: left;
+		}
+		.two {
+			float: left;
+			background-color: blue;
+		}
+		.three {
+			float: right;
+			background-color: purple;
+		}
+	</style>
+</head>
+<body>
+	<div class="one"></div>
+	<div class="two"></div>
+	<div class="three"></div>
+</body>
+</html>

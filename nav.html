@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航栏</title>
+	<style type="text/css" media="screen">
+		/*1.变化样式有大小 一行显示 行内块元素*/
+		/*2.鼠标经过 变化底色和文字颜色*/
+		a {
+			display: inline-block;
+			width: 100px;
+			height: 30px;
+			background-color: pink;
+			text-align: center;
+			color: white;
+			text-decoration: none;
+			/*行高等于高度 可以让单行文本垂直居中*/
+			line-height: 30px;
+		}
+		a:hover {
+			background-color: orange;
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<a href="#">新闻</a>
+	<a href="#">汽车</a>
+	<a href="#">体育</a>
+</body>
+</html>

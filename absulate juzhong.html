@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			/*绝对定位 margin 左右auto无效 不能让盒子水平居中*/
+			position: absolute;
+			/*左走自己宽度的一般，一定注意是负值*/
+			margin-left: -100px;
+			margin-top: -100px;
+			top: 50%;
+			left: 50%;
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			/*标准流的 margin 左右auto就可以让盒子水平居中对齐*/
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

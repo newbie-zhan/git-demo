@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.f {
+			/*float: left; 可以解决外边距合并的问题*/
+			/*position: relative; 不可以解决外边距合并的问题*/
+			width: 500px;
+			height: 500px;
+			background-color: pink;
+		}
+		.s {
+			/*float: left; 可以解决外边距合并的问题*/
+			/*position: absolute; 可以解决外边距合并的问题*/
+			/*position: fixed;  可以解决外边距合并的问题*/
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+			margin-top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="f">
+		<div class="s"></div>
+	</div>
+</body>
+</html>
