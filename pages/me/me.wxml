@@ -1,0 +1,158 @@
+<!-- <view class="container">
+  <view class="userinfo">
+
+    <!-- <image src="cloud://zhan-wx-x531y.7a68-zhan-wx-x531y-1301546255/my-img-CIkrQ5XVaLkB86eaab1dd883d21a21507cbb666a0e70"></image> -->
+<!-- <button wx:if="{{!userInfo.openid}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button> -->
+<!-- <block>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+
+      <button type="primary" open-type="contact">联系客服</button>
+      <button type="primary" bindtap="addMall">添加商品</button>
+      <button type="primary" bindtap="getMall">获取商品</button>
+    </block> -->
+<!--
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>   -->
+<!-- </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+
+
+
+
+<!-- <view class="tt">------个人中心------</view> -->
+<view class="user_info_wrap">
+  <view wx:if="{{userinfo.avatarUrl}}" class="user_img_wrap">
+    <image class="user_bg" src="{{userinfo.avatarUrl}}"></image>
+    <!-- //小图标 -->
+    <view class="user_info">
+      <image class="user_icon" src="{{userinfo.avatarUrl}}"></image>
+      <view class="user_name">{{userinfo.nickName}}</view>
+      <view class="user_name">{{userinfo.country}}-{{userinfo.province}}</view>
+    </view>
+  </view>
+  <view wx:else class="user_btn">
+    <navigator url="/pages/login/index">登录</navigator>
+  </view>
+</view>
+
+<view class="user_content">
+
+  <view class="user_main">
+    <!-- 历史足迹 -->
+    <!-- <view class="history_wrap">
+      <navigator>
+        <view class="his_num">0</view>
+        <view class="his_name">收藏的店铺</view>
+      </navigator>
+      <navigator url="/pages/collect/index">
+        <view class="his_num">{{collectNums}}</view>
+        <view class="his_name">收藏的商品</view>
+      </navigator>
+      <navigator>
+        <view class="his_num">0</view>
+        <view class="his_name">关注的商品</view>
+      </navigator>
+      <navigator>
+        <view class="his_num">0</view>
+        <view class="his_name">我的足迹</view>
+      </navigator>
+    </view> 
+    <!-- 我的订单 -->
+    <!-- <view class="orders_wrap">
+      <view class="orders_title">我的订单</view>
+      <view class="order_content">
+        <navigator url="/pages/order/index?type=1">
+          <view class="iconfont icon-ding_dan"></view>
+          <view class="order_name">全部订单</view>
+        </navigator>
+        <navigator url="/pages/order/index?type=2">
+          <view class="iconfont icon-fukuantongzhi"></view>
+          <view class="order_name">待付款</view>
+        </navigator>
+        <navigator url="/pages/order/index?type=3">
+          <view class="iconfont icon-receipt-address"></view>
+          <view class="order_name">待收货</view>
+        </navigator>
+        <navigator>
+          <view class="iconfont icon-tuihuotuikuan_dianpu"></view>
+          <view class="order_name">退款/退货</view>
+        </navigator>
+      </view>
+    </view>  -->
+    <!-- 收藏管理 -->
+    <!-- <view  style="display:flex;justify-content:space-between;">
+      <button class="collect_wrap"  bindtap="gotocollect">我的收藏</button> 
+      <button class="collect_wrap"  bindtap="gotocollect"></button> 
+    </view> -->
+    <!-- 购物车 -->
+    <view>
+      <navigator url="/pages/cart/cart" open-type="switchTab">
+        <view class="address_wrap">我的购物车</view>
+      </navigator>
+    </view>
+
+    <!-- 收货地址管理 -->
+    <view class="address_wrap">
+      <text bindtap="order">收货地址管理</text>
+    </view>
+    <view class="address_wrap">
+      <navigator url="/pages/feed/feed" class="app_info_item">意见反馈</navigator>
+    </view>   
+    <!-- 应用信息相关 -->
+    <view class="app_info_wrap">
+      
+      <view class="app_info_item app_info_contact">
+        <text>加盟热线</text>
+        <text>400-820-8820</text>
+      </view>
+      <view class="app_info_item app_info_contact" style="display:flex;justify-content:space-between;">
+        <button class="kf"  open-type="contact">联系客服</button>
+        <button class="kf2"  open-type="contact">(24小时在线)</button>
+      </view>
+
+      
+      <view class="app_info_item">关于我们</view>
+    </view>
+    <!-- 推荐 -->
+    <view class="recommend_wrap">
+      快推荐给其他人(右上角点击分享)
+    </view>
+    <!-- <button type="primary" bindtap="getMall">获取商品</button> -->
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+<!-- <view class="container2">
+  <view class="userinfo">
+    
+    <text>头像：</text>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">姓名：{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+<!-- <text style="font-weight:bold;font-size:60rpx;"></text>
+
+   <button type="primary" open-type="contact">联系客服</button>
+  <button type="primary" bindtap="addMall">添加商品</button> 
+  <button type="primary" bindtap="getMall">获取商品</button> 
+  <button type="primary" bindtap="order">收货地址</button>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> 
+</view> -->

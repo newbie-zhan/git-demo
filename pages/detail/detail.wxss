@@ -1,0 +1,217 @@
+page{
+  background-color: #fff;
+}
+.tt{
+  font-size: 80rpx;
+  background-color: rgb(255, 0, 234);
+
+}
+.all{
+  background-color:whitesmoke;
+}
+
+.cart{
+  padding:15rpx;
+  background: #EA5149;
+  border-radius: 50%;
+  color: white;
+  width: 40rpx; 
+}
+.detail_info{
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30rpx;
+  font-size: 30rpx;
+}
+.detail_info text:last-child{
+  font-weight: 600;
+  font-size: 40rpx;
+  color: red;
+  margin-top: 10rpx;
+}
+.t3{
+  width: 50%;
+  background-color: rgb(245, 245, 245);
+  color:burlywood;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  font-weight: 600;
+  align-items: center;
+  font-size: 800rpsx;
+}
+.b3{
+  background-color: whitesmoke;
+  size: 20%;
+  color: rgb(0, 183, 255);
+  padding: 10rpx;
+}
+.de_text{
+  color:red;
+}
+.kf{
+  width: 10%;
+  height: 3%；
+}
+.middle{
+   margin: 20rpx 0;
+   height: 90rpx;
+   background-color: white;
+   padding-left: 30rpx;
+   font-size: 28rpx;
+   box-sizing: border-box;
+   line-height: 90rpx;
+   
+}
+.middle text:nth-child(2){
+  margin-right: 20rpx;
+}
+.r{
+  background-color: red;
+  color:white;
+  padding: 10rpx;
+  border-radius: 50rpx;
+  font-weight: 600;
+}
+.detail_info_image{
+  widows: 100%;
+}
+
+.slide-image{
+  width: 750rpx;
+  height: 370rpx;
+  
+}
+.button{
+  border-radius: 20rpx;
+  
+  
+  color: blue;
+  
+}
+.mbutton{
+  border-radius: 20rpx;
+  background-color: white;
+  width: 20%;
+  color: black;
+}
+.bu{
+  display:flex;
+  justify-content:space-between;
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  width: 100%;
+  background-color: rgb(255, 123, 0);
+  
+}
+.see{
+  font-size: 40rpx;
+  border: 1rpx;
+  border-color:whitesmoke;
+  border-width: 2rpx 2rpx rpx 2rpx;
+  border-style: solid;
+  top: 20rpx;
+  left: 30rpx;
+  margin-top: 40rpx;
+  
+  
+}
+.slide-image{
+  width: 750rpx;
+  height: 370rpx;
+  
+}
+.video{
+  width: 750rpx;
+  height: 370rpx;
+  border-radius: 16rpx;
+}
+.cc{
+  color: red;
+  font-size: 45rpx;
+  width: 750rpx;
+  height: 370rpx;
+  margin-top: 40rpx;
+}
+.seetitle{
+  font-size: 45rpx;
+  border: 1rpx;
+  border-color:red;
+  border-width: 2rpx 2rpx rpx 2rpx;
+  border-style: solid;
+  top: 20rpx;
+  left: 30rpx;
+  width: 100%;
+  
+  margin-top: 20rpx;
+  
+}
+.title{
+  display: block;
+  text-align: center;
+  font-size: 50rpx;
+  font-weight: 500;
+  margin: 10rpx 0;
+}
+scroll-view{
+  width: 100%;
+  height: 100vh;
+}
+
+swiper viedo,image{
+  width: 100%;
+  border-radius: 16rpx;
+}
+
+
+.btm_tool {
+  border-top: 1rpx solid #ccc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+}
+.btm_tool .tool_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  position: relative;
+}
+.btm_tool .tool_item button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.btm_tool .btn_cart {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.btm_tool .btn_buy {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb4450;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+

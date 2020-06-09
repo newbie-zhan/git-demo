@@ -1,0 +1,45 @@
+<view class="seetitle" hover-class="none" hover-stop-propagation="false">
+  <!-- <view class="tt">--------购物车------</view> -->
+  <view class="hot">商品清单：</view>
+
+  <view wx:for="{{carts}}" wx:key="key" class="seetitle">
+    <view class="title">{{item.title}}</view>
+    <view class="product" >
+      <view style="display:flex;justify-content:flex-end;margin-botton:10rpx">
+        <image lazy-load="true" mode="aspectFit" class="image" src="{{item.image}}"></image>
+        <view class="price"> 价格：￥{{item.price}}</view>
+      </view>
+      <view style="display:flex;justify-content:flex-end;margin-botton:10rpx">
+        <view class="cart" data-index="{{index}}" bindtap="reduceCart"> -</view>
+        <view> 数量：￥{{item.num}}</view>
+        <view class="cart" data-index="{{index}}" bindtap="addCart"> +</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="t2">所有商品总价格：￥{{total}}</view>
+  <view wx:if="{{address.userName}}">
+    <view class="see">
+      <text>个人信息：</text>
+      <view>姓名：{{address.userName}}</view>
+      <view>电话：{{address.telNumber}}</view>
+      <view>地址：{{address.provinceName}}{{address.cityName}}{{address.countyName}}{{address.detailInfo}}</view>
+      <view>邮编：{{address.postalCode}}</view>
+    </view>
+  </view>
+</view>
+
+
+<view class="bu">
+  <button  bindtap="order">添加地址</button>
+  <button  bindtap="buy">(￥:{{total}})下单</button>
+</view>
+
+
+
+
+<!-- <view style="display:flex;justify-content:flex-end;margin-botton:10rpx">
+  <view class="cart" data-index="{{index}}"  bindtap="reduceCart">  -</view>
+  <view> 数量：{{item.num}}</view>
+  <view class="cart" data-index="{{index}}"  bindtap="addCart">  +</view>  
+</view> -->

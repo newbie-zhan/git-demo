@@ -1,0 +1,27 @@
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+
+  <view class="collect_main">
+    <view class="collect_title">
+      <text class="collect_tips active">全部收藏</text>
+      <text class="collect_tips active">正在热卖！</text>
+      <text class="collect_tips active">速速抢购！</text>
+    </view>
+    <view class="collect_content">
+      <view wx:for="{{mycollect}}" wx:key="key" class="seetitle">
+        <view class="title">{{item.title}}</view>
+        <view class="product">
+          <view style="display:flex;justify-content:flex-end;margin-botton:10rpx">
+            <image lazy-load="true" mode="aspectFit" class="image" src="{{item.image}}"></image>
+            <view class="price"> 价格：￥{{item.price}}</view>
+          </view>
+          <view style="display:flex;justify-content:flex-end;margin-botton:10rpx">
+            <view class="cart" data-index="{{index}}" bindtap="reduceCollect"> 取消</view>
+            <view> 数量：￥{{item.num}}</view>
+            <view class="cart" data-index="{{index}}" bindtap="addCart"> +</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</Tabs>

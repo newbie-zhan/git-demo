@@ -1,0 +1,26 @@
+<!--pages/class/class.wxml-->
+<!-- 容器 -->
+<view class="container">
+  <!-- 菜单 -->
+  <view class="menu">
+    <!-- 展示分类 -->
+    <text>推荐分类</text>
+    <view id="{{item.id}}" class="classtype" bindtap="searchTab"   wx:for="{{classType}}" wx:key="{{index}}" >
+      <text >{{item.name}}</text>
+    </view>
+  </view>
+  <!-- 产品列表 -->
+  <view class="list">
+    <view class="productList" wx:for="{{productList==''?list:productList}}" wx:key="{{index}}" id="{{item._id}}" open-type="switchTab" bindtap="toDetail">
+      <image src="{{item.image}}" mode="widthFix"></image>
+      <view class="info">
+        <text>{{item.title}}</text>
+        <text>价格：{{item.price}}</text>
+        
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
