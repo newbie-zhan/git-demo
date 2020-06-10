@@ -1,0 +1,15 @@
+
+
+.about-banner{
+  width: 375rpx;
+  height: 375rpx;
+ border-radius: 50%; 
+}
+
+.nav-hover{
+  color: red;
+}
+
+.nav-default{
+  color: green;
+}

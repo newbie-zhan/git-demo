@@ -1,0 +1,28 @@
+<!--pages/feedback/feedback.wxml-->
+<text>意见反馈</text>
+<view>--------------------------------</view>
+<view class='forms'>
+  <form bindsubmit='getForm'>
+    <view class='getform'>
+      <view>用戶名:
+        <input type='text' name='username' placeholder='請輸入用戶名' />
+      </view>
+      <view>年齡:
+        <input type='text' name='age' placeholder='請輸入年齡'></input>
+      </view>
+      <view>性別:
+        <input type='text' name='gender' placeholder='請輸入性別'></input>
+      </view>
+      <view>建议：
+        <textarea name='suggestion' type='text' placeholder="请描述一下您的问题"> </textarea>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button formType="submit">Submit</button>
+    </view>
+  </form>
+
+  <view class="btn-area">
+    <button bindtap='getData'>Get</button>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+/* pages/feedback/feedback.wxss */
+
+.btn-area{
+  background-color: #e4e4e4;
+  width: 30%;
+  margin: auto; /*居中處理*/
+  border-radius: 20rpx;
+  margin-top: 10px;
+
+}
+
+wx-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+wx-label {
+  display: block;
+  margin-top: 5px;
+}
+.picker-text {
+  margin-left: 10px;
+  position: relative;
+}

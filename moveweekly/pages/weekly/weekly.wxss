@@ -1,0 +1,50 @@
+.movie{
+  display: flex；
+}
+
+.movie-details{
+  display: flex;
+  flex-direction:column;
+  
+}
+
+.movie-image{
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.ss{
+  display: flex;
+  flex-direction: row;
+}
+
+.movie-swiper{
+  height: 90vh;
+}
+
+.movie-card{
+  height: 100%;
+  width: 100%;
+  background: #eee;
+  margin: 0 20rpx;
+  position: relative;
+}
+
+.return-button{
+  position: absolute;
+  right: 2px;
+  top: 40px;
+  font-size: 26rpx;
+  font-style: italic;
+  border: 1px solid blue;
+  border-right: 2px;
+  border-radius: 10%;
+}
+
+.movie-click{
+  height: 100%;
+  width: 80%;
+  background-color: rgb(238, 238, 238);
+  margin: 20rpx 25%;
+  position: relative;
+}
