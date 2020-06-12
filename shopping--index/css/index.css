@@ -1,0 +1,319 @@
+/*这个文件立方的是首页的样式*/
+
+.main {
+	width: 980px;
+	height: 455px;
+	/*background-color: pink;*/
+	margin-left: 219px;
+	margin-top: 10px;
+}
+.focus {
+	position: relative;
+	width: 720px;
+	height: 455px;
+	background-color: purple;
+}
+
+.arrow-l,
+.arrow-r {
+	position: absolute;
+	top: 50%;
+	
+	margin-top: -20px;
+	width: 24px;
+	height: 40px;
+	background: rgba(0,0,0,.3);
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-family: 'icomoon';
+	font-size: 18px;
+}
+.arrow-r {
+	right: 0;
+}
+.circle {
+	position: absolute;
+	bottom: 10px;
+	left: 50px;
+}
+.circle li {
+	float: left;
+	width: 8px;
+	height: 8px;
+	/*background-color: #fff;*/
+	border: 2px solid rgba(255,255,255,.5);
+	margin: 0 3px;
+	border-radius: 50%; 
+	/*速表经过显示小手*/
+	cursor: pointer;
+}
+.current {
+	background-color: #fff;
+}
+.newsflash {
+	width: 250px;
+	height: 455px;
+	/*background-color: blue;*/
+}
+.news {
+	height: 163px;
+	border: 1px solid #ccc;
+	/*background-color: pink;*/
+}
+.news-hd {
+	height: 32px;
+	/*dotted点线  dashed虚线*/
+	padding: 0 15px;
+	border-bottom: 1px dotted #ccc;
+	font-size: 14px;
+	line-height: 32px;
+}
+.news-hd a {
+	float: right;
+	font-family: 'icomoon';
+	font-size: 12px;
+}
+.news-bd {
+	padding: 10px 0 0 15px;
+}
+.news-bd li {
+	height: 23px;
+}
+.lifeservice {
+	/*将子盒子超出父盒子的部分隐藏*/
+	overflow: hidden;
+	height: 208px;
+	border: 1px solid #ccc;
+	/*给三个边框，上边框上面的盒子有了，防止重叠加粗，不写*/
+	border-top: none;
+	/*background-color: orange;*/
+}
+.lifeservice ul {
+	/*子盒子可以比父盒子大*/
+	width: 255px;
+}
+.lifeservice li {
+	position: relative;
+	float: left;
+	width: 62px;
+	height: 70px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.lifeservice li a {
+	/*a是行内元素，没有大小，转换为块级元素，可以和父级一样宽；*/
+	display: block;
+	/*解决a 和i都是块级元素，i引起的外边距塌陷合并问题*/
+	overflow: hidden;
+	height: 100%;
+}
+.lifeservice li p {
+	text-align: center;
+}
+.hot {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 12px;
+	height: 15px;
+	background: url(../img/jian.jpg) no-repeat;
+}
+.service_ico {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url(../img/icons.png) no-repeat ;
+	margin: 10px auto;
+}
+.service_ico_huafei {
+	background-position: -17px -16px;
+}
+.service_ico_feiji {
+	width: 26px;
+	background-position: -78px -16px;
+}
+.service_ico_dainying {
+	width: 26px;
+	background-position: -140px -16px;
+}
+.service_ico_youxi {
+	width: 26px;
+	background-position: -205px -16px;
+}
+.service_ico_caipiao {
+	width: 26px;
+	background-position: -16px -87px;
+}
+.service_ico_jiayou {
+	width: 26px;
+	background-position: -77px -87px;
+}
+.service_ico_jiudian {
+	width: 26px;
+	background-position: -140px -87px;
+}
+.service_ico_huoche {
+	width: 26px;
+	background-position: -205px -87px;
+}
+.service_ico_zhongcou {
+	width: 26px;
+	background-position: -16px -158px;
+}
+.service_ico_licai {
+	width: 26px;
+	background-position: -77px -158px;
+}
+.service_ico_lipin {
+	width: 26px;
+	background-position: -140px -158px;
+}
+.service_ico_baitiao {
+	width: 26px;
+	background-position: -205px -158px;
+}
+.bargain {
+	height: 75px;
+	margin-top: 5px;
+}
+
+/*recommend推荐模块*/
+.recommend {
+	height: 163px;
+	/*background-color: pink;*/
+	margin-top: 10px;
+}
+.recom-hd {
+	float: left;
+	width: 200px;
+	height: 163px;
+	background-color: #5c5251;
+	text-align: center;
+}
+.recom-hd img {
+	margin: 30px 0 10px 0;
+}
+.recom-hd h3 {
+	font-size: 18px;
+	color: #fff;
+	font-weight: normal;
+}
+.recom-bd {
+	float: left;
+	width: 1000px;
+	height: 163px;
+	background-color: #ebebeb;
+}
+.recom-bd li {
+	float: left;
+	/*盒子宽250，右边框1px,250-1=249*/
+	width: 249px;	
+	height: 145px;
+	border-right: 1px solid #ccc;
+	/*background-color: pink;*/
+	margin-top: 10px;
+}
+.recom-bd .last {
+	/*清除最右边多出的边框，为了是权重大于上面的li（11）,所以这个(20)*/
+	border-right: 0;
+}
+
+/*floor 楼层区*/
+.box-hd {
+	height: 30px;
+	/*background-color: pink;*/
+	border-bottom: 2px solid #c81623;
+	margin-top: 25px;
+}
+.box-hd h3 {
+	float: left;
+	font-size: 18px;
+	color: #c81623;
+}
+.tab-list {
+	float: right;
+	/*垂直居中*/
+	line-height: 30px;
+}
+.tab-list li {
+	float: left;
+}
+.tab-list li a {
+	margin: 0 15px;
+}
+.box-bd {
+	height: 360px;
+	/*background-color: orange;*/
+}
+.w209 {
+	width: 209px;
+	color: #f9f9f9;
+}
+.w329 {
+	width: 329px;
+}
+.w219	{
+	width: 219px;
+	border-right: 1px solid #ccc;
+}
+.w220 {
+	width: 220px;
+	border-right: 1px solid #ccc;
+}
+.tab-con li {
+	float: left;
+	height: 360px;
+}
+.tab-con-item {
+	border-bottom: 1px solid #ccc;
+}
+.tab-con-list {
+	/*父级盒子没有给高度，子盒子浮动，清除浮动*/
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.tab-con-list li {
+	width: 86px;
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid #ccc;
+	margin-left: 10px;
+	text-align: center;
+
+
+}
+.box-bd li {
+	overflow: hidden;
+}
+.box-bd img {
+	/*过渡写在本身上, 谁做动画给谁加*/
+	transition: all 0.2s;
+}
+/*鼠标经过图片，往右走8px*/
+.box-bd img:hover {
+	margin-left: 8px;
+}
+/*电梯导航*/
+.fixedtool {
+	position: fixed;
+	/*电梯导航栏是固定定位，在版心主页面的右侧，整个浏览器的一半减去版心和自己的一半*/
+	top: 100px;
+	left: 50%;
+	/*版心一半+自己一半+一段距离10=600+66+10=676*/
+	margin-left: -676px;
+	width: 66px;
+	background-color: #fff;
+}
+.fixedtool li {
+	height: 32px;
+	line-height: 32px;
+	font-size: 12px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.fixedtool .current {
+	background-color: #c81623;
+	color: #fff;
+}

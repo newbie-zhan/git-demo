@@ -1,8 +1,0 @@
-<view class="container">
-<image  class="about-banner" src="/images/2.jpg"></image>
-<text style="font-weight:bold;font-size:60rpx;">电影周周看</text>
-<view>
-<text>美俊</text><navigator style="display:inline;" url="/pages/weekly/weekly" open-type="navigate" hover-class="nav-hover" class="nav-default">每周推荐</navigator><text>一部好片</text>
-</view>
-<text>我的QQ：510995105</text>
-</view>
