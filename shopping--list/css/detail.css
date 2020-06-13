@@ -1,0 +1,97 @@
+/*详情页的样式文件*/
+
+.de_container {
+	margin-top: 20px;
+}
+.crumb_wrap {
+	height: 25px;
+}
+.crumb_wrap a {
+	margin-right: 10px;
+}
+.preview_wrap {
+	width: 400px;
+	height: 590px;
+	
+}
+.itemInfo_wrap {
+	width: 718px;
+	/*background-color: orange;*/
+}
+.preview_img {
+	height: 398px;
+	border: 1px solid #ccc;
+}
+.preview_list {
+	position: relative;
+	height: 60px;
+	
+	margin-top: 60px;
+}
+.list-item {
+	width: 320px;
+	height: 60px;
+	margin: 0 auto;
+}
+.list-item li {
+	float: left;
+	width: 56px;
+	height: 56px;
+	border: 2px solid transparent;
+	margin: 0 2px;
+}
+.list-item li.current {
+	background-color: #c81623;
+}
+.arrow_prev,
+.arrow_next {
+	position: absolute;
+	top: 15px;
+	width: 22px;
+	height: 32px;
+	background: url(../img/arrow-prev.png) no-repeat;
+}
+.arrow_prev {
+	left: 0;
+}
+.arrow_next {
+	right: 0;
+	background: url(../img/arrow-next.png) no-repeat;
+}
+.preview_end {
+	margin-top: 25px;
+}
+.preview_end span {
+	margin-right: 35px;
+}
+.sku_name {
+	/*高度剩余法，子的高度远小于高，
+	/*而且字是默认贴着上边框，剩下的就成了下边框一样的效果/*/
+	height: 30px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.news {
+	height: 32px;
+	color: #e12228; 
+}
+.summary dl {
+	/*清除dl,dt浮动引起的问题*/
+	overflow: hidden;
+}
+.summary dt,
+.summary dd {
+	float: left;
+}
+.summary dt {
+	width: 60px;
+	padding-left: 10px;
+}
+.summary_price {
+	padding: 10px 0;
+	background-color: #fee9eb;
+}
+.price {
+	font-size: 24px;
+	color: #e12228;
+}
