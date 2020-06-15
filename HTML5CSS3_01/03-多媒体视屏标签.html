@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        video {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <video src="media/video.mp4" controls="controls"></video> -->
+    <!-- 谷歌浏览器把自动播放功能给禁用了，有解决方案：给视频加静音属性  -->
+    <video controls="controls" muted="muted" loop="loop" poster="media/pig.jpg">
+        <source src="media/video.mp4" type="video/mp4">
+        <source src="media/video.ogg" type="video/ogg">    
+    </video>
+</body>
+
+</html>
