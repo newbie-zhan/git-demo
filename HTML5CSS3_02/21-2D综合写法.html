@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合写法</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: all 0.3s;
+            margin: 100px auto;
+        }
+        
+        div:hover {
+            /* 同时使用多个转换，其格式为 `transform: translate() rotate() scale()` */
+            /* 我们同时有位置或者其他属性的时候，要将位移放到最前面 */
+            transform: translate(200px, 50px) rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
