@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两面翻转的盒子</title>
+    <style>
+        body {
+            perspective: 400px;
+        }
+        
+        .box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            transition: all 0.3s;
+            /* 让背面的黑子保留立体空间,给父级盒子添加 */
+            transform-style: preserve-3d;
+        }
+        
+        .box:hover {
+            transform: rotateY(180deg);
+        }
+        
+        .front,
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            line-height: 300px;
+        }
+        
+        .front {
+            background-color: pink;
+            z-index: 1;
+        }
+        
+        .back {
+            background-color: purple;
+            /* 两个div背靠背在一起，翻转就能看见另一个div */
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="front">好好学习，天天向上</div>
+        <div class="back">早睡早起身体好</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>速度曲线步长</title>
+    <style>
+        div {
+            overflow: hidden;
+            font-size: 20px;
+            width: 0;
+            height: 30px;
+            /* 让文字强制一行内显示 */
+            white-space: nowrap;
+            background-color: pink;
+            /* animation: name duration timing-function delay 
+            iteration-count direction fill-mode; */
+            /* steps就是分几步完成动画效果，有steps就不要写linear ease  */
+            animation: w 4s steps(10) infinite forwards;
+        }
+        
+        @keyframes w {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>我在这儿等着你回来</div>
+</body>
+
+</html>

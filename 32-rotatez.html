@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotateZ</title>
+    <style>
+        body {
+            perspective: 300px;
+        }
+        
+        img {
+            /* img是行内元素 */
+            display: block;
+            width: 200px;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+        
+        img:hover {
+            /* transform: rotateZ(360deg); */
+            /* transform: rotate3d(x, y, z, deg)  */
+            /* 沿着自定义轴旋转 deg 为角度 x, y, z 表示旋转轴的矢量， */
+            /* 是标识你是否希望沿着该轴进行旋转，最后一个标识旋转的角度 */
+            /* transform: rotate3d(1, 0, 0, 45deg) */
+            /* 沿着 x 轴旋转 45deg */
+            transform: rotate3d(1, 1, 0, 360deg)
+            /* 沿着对角线旋转 360deg */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="media/yin.jpg" alt="">
+</body>
+
+</html>
