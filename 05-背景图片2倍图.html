@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 1.我们需要一个50*50相像素（CSS像素）的背景图片，但是根据分析整个图片还是要准备100*100 */
+            /*2. 我们采取的是放一个100*100的图片，然后手动把图片缩小为50*50（CSS像素）bsckground-size */
+            /* 我们准备的图片比实际需要的大小 大2倍，这就是2倍图 */
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            background: url(images/apple100.jpg) no-repeat;
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
