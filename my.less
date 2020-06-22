@@ -1,0 +1,15 @@
+// 定义一个粉色的变量
+// 必须有@为前缀
+// + 不能包含特殊字符 错误的变量名：@1color @color~@#
+// + 不能以数字开头
+// + 大小写敏感 变量名区分大小写
+
+@color : pink;
+@font14: 14px;
+body {
+    background-color: @color;
+}
+div {
+    color: @color;
+    font-size: @font14;
+}

@@ -1,0 +1,23 @@
+.header {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    // 1.less 嵌套 子元素的样式直接写在父元素的里面就好了s
+    a {
+        color: red;
+        // 如果遇见 （交集|伪类|伪元素选择器） ，利用&进行连接 内层选择器前加&
+        &:hover {
+            color: khaki;
+        }
+    }
+}
+.nav {
+    .logo {
+        color: greenyellow;
+    }
+    &::before {
+        content: 'dfd';
+        color: lightblue;
+
+    }
+}
