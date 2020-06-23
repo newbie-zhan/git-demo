@@ -1,0 +1,126 @@
+body {
+    min-width: 320px;
+    max-width: 750px;
+    /* flexible 给我们划分了 10 等份 font-size:750/10=75px */
+    /* 设计稿750rem / 75 */
+    width: 10rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    font-size: .333333rem;
+}
+
+
+/* 这个插件，premiere发html文字大小 cssroot 16px */
+
+
+/* 如果品目超过了750px 南无我们就按照设计稿750px来走 不会让页面超过750px */
+
+
+/* !important 权重无穷大 */
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px!important;
+    }
+}
+
+
+/* search_content */
+
+.search_content {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    height: 1.173333rem;
+    background-color: #ffc001;
+}
+
+.classify {
+    width: .586667rem;
+    height: .933333rem;
+    background: url(../images/classify.png) no-repeat;
+    background-size: .586667rem .933333rem;
+    margin: .146667rem .333333rem .133333rem;
+}
+
+.search {
+    flex: 1;
+}
+
+.login {
+    width: 1rem;
+    height: .933333rem;
+    margin: .133333rem;
+    /* background-color: pink; */
+    color: #fff;
+    text-align: center;
+    line-height: .933333rem;
+    font-size: .333333rem;
+}
+
+.search input {
+    width: 100%;
+    height: .88rem;
+    outline: none;
+    border: 0;
+    font-size: .333333rem;
+    border-radius: .44rem;
+    background-color: #fff2cc;
+    margin-top: .133333rem;
+    padding-left: .733333rem;
+    color: #757575;
+}
+
+
+/* banner */
+
+.banner img {
+    width: 100%;
+}
+
+
+/* nav_content */
+
+.ad_content {
+    display: flex;
+}
+
+.ad_content a {
+    flex: 1;
+}
+
+.ad_content a img {
+    width: 100%;
+}
+
+nav {
+    width: 10rem;
+}
+
+nav a {
+    float: left;
+    width: 2rem;
+    height: 1.866667rem;
+    text-align: center;
+}
+
+nav img {
+    display: block;
+    width: 1.093333rem;
+    height: 1.093333rem;
+    margin: .133333rem auto 0;
+}
+
+nav a span {
+    font-size: .333333rem;
+    color: #000;
+}
