@@ -11,10 +11,16 @@
     <![endif]-->
     <!-- 一定不要忘记引入bootstrap的样式文件 -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <title>Document</title>
+    <title>栅格系统列排序</title>
     <style>
-        .row>div {
+        .row div:nth-child(1) {
+            height: 50px;
             background-color: pink;
+        }
+        
+        .row div:nth-child(2) {
+            height: 50px;
+            background-color: greenyellow;
         }
     </style>
 </head>
@@ -22,17 +28,13 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <!-- 列嵌套最好加一行row 这样可以取消父元素的padding值，而且高度自动和父元素一样高 -->
-                <div class="row">
-                    <div class="col-md-6">a</div>
-                    <div class="col-md-6">s</div>
-                </div>
-
-            </div>
-            <div class="col-md-4">2</div>
-            <div class="col-md-4">3</div>
+            <!-- push 推，将左侧盒子推到右边 -->
+            <div class="col-md-4 col-md-push-8">左侧</div>
+            <!-- pull 拉，将右侧盒子拉到左侧 -->
+            <div class="col-md-8 col-md-pull-4">右侧</div>
         </div>
+        <br>
+
     </div>
 </body>
 

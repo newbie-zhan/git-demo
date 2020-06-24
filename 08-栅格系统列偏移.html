@@ -12,10 +12,28 @@
     <!-- 一定不要忘记引入bootstrap的样式文件 -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <title>Document</title>
+    <style>
+        .row div {
+            height: 50px;
+            background-color: pink;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">123</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">左侧</div>
+            <!-- offset偏移 -->
+            <div class="col-md-4 col-md-offset-4">右侧</div>
+        </div>
+        <br>
+        <div class="row">
+            <!-- offset偏移 -->
+            <!-- r如果只有一个盒子，盒子占8，则想要居中则偏移2，父盒子一共12 -->
+            <div class="col-md-8 col-md-offset-2">右侧</div>
+        </div>
+    </div>
 </body>
 
 </html>
