@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        // 1.方法一：
+        var a = [2, 0, 6, 1, 77, 52, 0, 25, 7];
+        var b = [],
+            j = 0;
+        for (var i = 0; i < a.length; i++) {
+            if (a[i] >= 10) {
+                b[j] = a[i];
+                j++;
+            }
+        }
+        console.log(b);
+
+        //2， 方法二：
+        var c = [2, 0, 6, 1, 77, 52, 0, 25, 7];
+        var d = [];
+
+        for (var i = 0; i < a.length; i++) {
+            if (c[i] >= 10) {
+                d[d.length] = a[i];
+
+            }
+        }
+        console.log(d);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
