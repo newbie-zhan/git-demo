@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>\</title>
+    <script>
+        var num = prompt('请输入班级学生总人数：');
+        var score = 0,
+            stu = 0;
+        for (var i = 1; i <= num; i++) {
+            stu = prompt('第' + i + '个学生成绩为：');
+            score += parseFloat(stu);
+            // score += stu - 0;
+
+        }
+        console.log('学生总成绩为：' + score + '\n' + '学生平均成绩为：' + score / num);
+        alert('学生总成绩为：' + score + '\n' + '学生平均成绩为：' + score / num);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
