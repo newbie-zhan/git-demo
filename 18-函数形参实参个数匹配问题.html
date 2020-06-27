@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        function getsum(n1, n2) {
+            console.log(n1 + n2);
+
+        }
+        // 1.实参个数和形参个数一样，则结果正常输出
+        getsum(1, 5);
+
+        // 2.实参个数多于形参个数，就会取到形参个数
+        getsum(1, 3, 5);
+        // 3.实参个数少于形参个数,结果是NaN
+        // 形参可以看成是不用生命的变量，内是一个变量的那还是没有接受值，结果就是undifined
+        getsum(4);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

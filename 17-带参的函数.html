@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        // 计算1-100之间值的函数
+
+        // 声明函数
+        function getSum(num1, num2) { //形参是接受实参的
+            var sumNum = 0; // 准备一个变量，保存数字和
+
+            for (var i = num1; i <= num2; i++) {
+                sumNum += i; // 把每个数值 都累加 到变量中
+            }
+            console.log(sumNum);
+        }
+        // 调用函数
+        getSum(1, 1000);
+        getSum(1, 100);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
