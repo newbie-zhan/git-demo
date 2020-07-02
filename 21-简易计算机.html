@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        var n1 = prompt('请输入数一：');
+        var n2 = prompt('请输入数二：');
+        var choose = prompt('欢迎使用简易计算机：\n1.加法运算\n2.减法运算\n3.乘法运算\n4.除法运算\n5.退出\n请输入运算的选项：');
+
+        switch (choose) {
+            case '1':
+                var sum = parseFloat(n1) + parseFloat(n2);
+                alert('计算结果为：' + sum);
+                break;
+            case '2':
+                var sum = parseFloat(n1) - parseFloat(n2);
+                alert('计算结果为：' + sum);
+                break;
+            case '3':
+                var sum = parseFloat(n1) * parseFloat(n2);
+                alert('计算结果为：' + sum);
+                break;
+            case '4':
+                var sum = parseFloat(n1) / parseFloat(n2);
+                alert('计算结果为：' + sum);
+                break;
+
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

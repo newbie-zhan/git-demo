@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        //     function 构造函数名(形参1,形参2,形参3) {
+        //        this.属性名1 = 参数1;
+        //        this.属性名2 = 参数2;
+        //        this.属性名3 = 参数3;
+        //        this.方法名 = 函数体;
+        //   }
+        function Star(uname, age, sex) {
+            this.name = uname;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function(sang) {
+                console.log(sang);
+
+            }
+        }
+        var ldh = new Star('三丰', 99, '男');
+        console.log(typeof ldh);
+        console.log(ldh);
+        var zxy = new Star('张学友', 40, '男');
+        console.log(zxy);
+        console.log(zxy.name);
+        zxy.sing('唱歌！！！')
+
+
+        // 1. 构造函数名字首字母要大写
+        // 2. 我们构造函数不需要return 就可以返回结果
+        // 3. 我们调用构造函数 必须使用 new
+        // 4. 我们只要new Star() 调用函数就创建一个对象 ldh  {}
+        // 5. 我们的属性和方法前面必须添加 this
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
