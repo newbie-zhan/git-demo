@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        var date = new Date();
+        console.log(date.getHours());
+        console.log(date.getMinutes());
+        console.log(date.getSeconds());
+
+        function getTime() {
+            var time = new Date();
+            var h = time.getHours();
+            h = h < 10 ? '0' + h : h;
+            var m = time.getMinutes();
+            m = m < 10 ? '0' + m : m;
+            var s = time.getSeconds();
+            s = s < 10 ? '0' + s : s;
+            return '当前时间为：' + h + ':' + m + ':' + s;
+        }
+        console.log(getTime());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
