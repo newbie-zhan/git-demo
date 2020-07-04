@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <ul>
+        <li>好好学习，天天向上1</li>
+        <li>好好学习，天天向上2</li>
+        <li>好好学习，天天向上3</li>
+        <li>好好学习，天天向上4</li>
+        <li>好好学习，天天向上5</li>
+    </ul>
+
+    <ul id='nav'>
+        <li>加油亚啊啊啊啊啊啊啊</li>
+        <li>加油亚啊啊啊啊啊啊啊</li>
+        <li>加油亚啊啊啊啊啊啊啊</li>
+        <li>加油亚啊啊啊啊啊啊啊</li>
+        <li>加油亚啊啊啊啊啊啊啊</li>
+    </ul>
+
+    <script>
+        // 1.返回的是 获取过来元素对象的集合 以伪数组的形式存储的
+        var lis = document.getElementsByTagName('li');
+        console.log(lis);
+        console.log(lis[0]);
+        // 2. 我们想要依次打印里面的元素对象我们可以采取遍历的方式
+        for (var i = 0; i < lis.length; i++) {
+            console.log(lis[i]);
+
+        }
+        // 3. 如果页面中只有一个li 返回的还是伪数组的形式 
+        // 4. 如果页面中没有这个元素 返回的是空的伪数组的形式
+        // 5. element.getElementsByTagName('标签名'); 父元素必须是指定的单个元素
+
+        var nav = document.getElementById('nav');
+        var navList = nav.getElementsByTagName('li');
+        console.log(navList);
+    </script>
+</body>
+
+</html>
