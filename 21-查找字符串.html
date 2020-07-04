@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        var str = 'abcoefoxyozzopp';
+        var index = str.indexOf('o');
+        var num = 0;
+        while (index != -1) {
+            console.log(index);
+            num++;
+            index = str.indexOf('o', index + 1)
+
+        }
+        console.log('o出现的次数：' + num);
+
+
+        // 课后作业 ['red', 'blue', 'red', 'green', 'pink','red'], 求 red 出现的位置和次数
+        var arr = ['red', 'blue', 'red', 'green', 'pink', 'red'];
+        var count = arr.indexOf('red');
+        var n = 0;
+        while (count != -1) {
+            console.log(count);
+            n++;
+            count = arr.indexOf('red', count + 1);
+
+        }
+        console.log('red出现次数：' + n);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
