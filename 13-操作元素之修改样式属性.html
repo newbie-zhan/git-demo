@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+
+    <script>
+        //1.获取元素
+        var div = document.querySelector('div');
+        //2.注册事件 处理程序
+        div.onclick = function() {
+            // div.style里面的属性采用驼峰命名法
+            this.style.backgroundColor = 'blue';
+            this.style.width = '300px';
+        }
+    </script>
+</body>
+
+</html>
