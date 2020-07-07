@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>效率测试</title>
+
+</head>
+
+<body>
+
+</body>
+
+<script>
+    function fn() {
+        var d1 = +new Date();
+        var array = [];
+        for (var i = 0; i < 1000; i++) {
+            array.push('<div style="width:100px; height:2px; border:1px solid blue;"></div>');
+        }
+        document.body.innerHTML = array.join(''); //将数组转换为字符串
+        var d2 = +new Date();
+        console.log((d2 - d1) / 1000 + '秒');
+
+    }
+    fn();
+</script>
+
+</html>

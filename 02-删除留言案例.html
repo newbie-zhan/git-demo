@@ -36,11 +36,15 @@
             font-size: 14px;
             margin: 15px 0;
         }
+        
+        li a {
+            float: right;
+        }
     </style>
 </head>
 
 <body>
-    <textarea name="" id="" placeholder="请输入留言内容"></textarea>
+    <textarea name="" id=""></textarea>
     <button>发布</button>
     <ul>
 
@@ -52,18 +56,29 @@
         var ul = document.querySelector('ul');
         // 2. 注册事件
         btn.onclick = function() {
-
             if (text.value == '') {
-                alert('请输入内容');
+                alert('您没有输入内容');
                 return false;
             } else {
+                // console.log(text.value);
+                // (1) 创建元素
                 var li = document.createElement('li');
-                console.log(text.value);
-                li.innerHTML = text.value;
-
+                // 先有li 才能赋值
+                li.innerHTML = text.value + "<a href='javascript:;'>删除</a>";
+                // (2) 添加元素
+                // ul.appendChild(li);
                 ul.insertBefore(li, ul.children[0]);
+                // (3) 删除元素 删除的是当前链接的li  它的父亲
+                var as = document.querySelectorAll('a');
+                for (var i = 0; i < as.length; i++) {
+                    as[i].onclick = function() {
+                        // 2. children 获取所有的子元素节点 也是我们实际开发常用的
+                        ul.removeChild(this.parentNode);
+                    }
+                }
             }
             text.value = '';
+
         }
     </script>
 </body>
