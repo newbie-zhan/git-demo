@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 260px;
+            height: 130px;
+            border: 2px solid red;
+        }
+        
+        .box h3 {
+            text-align: center;
+            color: red;
+            font-size: 20px;
+        }
+        
+        div {
+            margin: 200px;
+        }
+        
+        .time {
+            margin: 0 18px;
+        }
+        
+        span {
+            display: inline-block;
+            width: 52px;
+            height: 40px;
+            background-color: #333;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h3>狂欢倒计时</h3>
+        <div class="time">
+            <span class="day"></span>
+            <span class="hour">1</span>
+            <span class="minute">2</span>
+            <span class="second">3</span>
+        </div>
+    </div>
+    <script>
+        // 1. 获取元素 
+        // 天的黑色盒子
+        var day = document.querySelector('.day');
+        // 小时的黑色盒子
+        var hour = document.querySelector('.hour');
+        // 分钟的黑色盒子
+        var minute = document.querySelector('.minute');
+        // 秒数的黑色盒子
+        var second = document.querySelector('.second');
+        // 返回的是用户输入时间总的毫秒数
+        var inputTime = +new Date('2020-7-10 8:8:8');
+        // 我们先调用一次这个函数，防止第一次刷新页面有空白,因为定时器首次开启也需要1秒的等待，就会有空白
+        countDown();
+        // 2. 开启定时器
+        setInterval(countDown, 1000);
+
+        function countDown() {
+            // 返回的是当前时间总的毫秒数
+            var nowTime = +new Date();
+            // times是剩余时间总的秒数 
+            var times = (inputTime - nowTime) / 1000;
+            var d = parseInt(times / 60 / 60 / 24); //天
+            d = d < 10 ? '0' + d : d;
+            day.innerHTML = d + '天';
+            // 把剩余的天给 天黑色盒子
+            var h = parseInt(times / 60 / 60 % 24); //时
+            h = h < 10 ? '0' + h : h;
+            // 把剩余的小时给 小时黑色盒子
+            hour.innerHTML = h + '时';
+            var m = parseInt(times / 60 % 60); //分
+            m = m < 10 ? '0' + m : m;
+            minute.innerHTML = m + '分';
+            var s = parseInt(times % 60); //秒
+            s = s < 10 ? '0' + s : s;
+            second.innerHTML = s + '秒';
+
+        }
+    </script>
+</body>
+
+</html>
