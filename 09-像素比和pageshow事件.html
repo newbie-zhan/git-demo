@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>Document</title>
+    <!-- <script src="flexible.js"></script> -->
 </head>
 
 <body>
-    <a href="list.html">点击我去往列表页</a>
-    <button>前进</button>
+
     <script>
-        var btn = document.querySelector('button');
-        btn.addEventListener('click', function() {
-            // history.forward();
-            history.go(1);
+        // console.log(window.devicePixelRatio);
+        window.addEventListener('pageshow', function() {
+            alert(11);
         })
     </script>
+    <a href="http://www.itcast.cn">链接</a>
 </body>
 
 </html>
