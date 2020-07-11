@@ -7,7 +7,7 @@
 em,
 i {
     font-style: normal;
-}
+} 
 /*去掉列表前面的小点*/
 li {
     list-style: none;
@@ -46,6 +46,7 @@ body {
 
 .hide,
 .none {
+    /*显示隐藏*/
     display: none;
 }
 /*清除浮动*/
