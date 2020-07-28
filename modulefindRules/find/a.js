@@ -1,1 +1,0 @@
-console.log('find文件夹中的a.js被执行了')
