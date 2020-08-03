@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "SearchInput": "../../components/SearchInput/SearchInput"
-  },
-  "navigationBarTitleText": "手表页",
-  "enablePullDownRefresh": true
-}
