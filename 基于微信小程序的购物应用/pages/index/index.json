@@ -1,0 +1,10 @@
+{
+  "usingComponents":{
+
+"SearchInput":"../../components/SearchInput/SearchInput",
+    "Tabs": "../../components/Tabs/Tabs"
+  },
+  "navigationBarTitleText":"8淘购",
+  "enablePullDownRefresh":true
+}
+

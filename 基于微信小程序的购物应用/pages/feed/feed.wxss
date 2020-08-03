@@ -1,0 +1,83 @@
+/* pages/feed/feed.wxss */
+page {
+  background-color: #eeeeee;
+}
+
+.forms{
+  background-color: white;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.button1{
+  background-color:whitesmoke;
+  color: white;
+  width: 80%;
+  
+  align-items: center;
+
+  
+}
+
+.button2{
+  background-color: red;
+  color: white;
+  width: 30%;
+  border-radius: 20%;
+  align-items: center;
+  margin-top: 20rpx;
+  
+}
+
+.feed{
+  background-color: whitesmoke;
+  width: 96%;
+  color:black;
+ 
+}
+
+.hot{
+  display: block;
+  text-align: center;
+  font-size: 50rpx;
+  margin: 10rpx 0;
+  color: rgba(255, 145, 0, 0.589);
+  margin-top: 50rpx;
+
+}
+
+.middle{
+  margin-left: 4%;
+  color: rgb(44, 255, 150);
+  
+}
+
+.button_two{
+  display: flex;
+  width: 100%;
+  margin-top: 20rpx;
+  justify-content:space-between;
+}
+
+
+.fb_main {
+  padding: 20rpx;
+  color: #666;
+}
+.fb_main .fb_tips {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fb_main .fb_tips text {
+  width: 30%;
+  padding: 10rpx;
+  text-align: center;
+  background-color: #fff;
+  margin: 20rpx 10rpx;
+}
+
+
+
+
+

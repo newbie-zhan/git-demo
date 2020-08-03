@@ -1,0 +1,25 @@
+<!--pages/fenye/fenye.wxml-->
+<text class="hot">限时抢购!!!</text>
+
+<view wx:for="{{list}}" wx:key="key"  id="{{item._id}}" class="item-container" bindtap="toDetail">
+  
+  <image lazy-load="true" mode="aspectFit" class="image" src="{{item.image}}"></image>
+
+  <view class="content">
+    <view class="title">{{item.title}} :(浏览人数)  {{item.count}}</view>
+
+    <view>
+      <text class="tag" wx:for="{{item.tags}}" wx:key="key">{{item}}</text>
+    </view>
+  </view>
+  <view class="action">
+    <view>
+      ￥{{item.price}}
+    </view>
+    <view class="cart" data-item="{{item}}" catchtap="addCart">
+      添加
+    </view>
+  </view>
+
+
+</view>
