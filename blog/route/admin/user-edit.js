@@ -1,6 +1,10 @@
 const { User } = require('../../model/user');
 
 module.exports = async (req, res) => {
+
+	// 标识 标识当前访问的是用户管理页面
+	req.app.locals.currentLink = 'user';
+
 	// 获取到地址栏中的id参数
 	const { message, id } = req.query;
 
@@ -13,7 +17,7 @@ module.exports = async (req, res) => {
 		res.render('admin/user-edit', {
 			message: message,
 			user: user,
-			link: '/admin/user-add?id=' + id,
+			link: '/admin/user-modify?id=' + id,
 			button: '修改'
 		});
 

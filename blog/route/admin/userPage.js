@@ -2,6 +2,10 @@
 const { User } = require('../../model/user');
 
 module.exports = async (req, res) => {
+
+	// 标识 标识当前访问的是用户管理页面
+	req.app.locals.currentLink = 'user';
+
 	// 接收客户端传递过来的当前页参数
 	let page = req.query.page || 1;
 	// 每一页显示的数据条数
