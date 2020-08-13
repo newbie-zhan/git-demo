@@ -1,0 +1,50 @@
+<!-- 引入html骨架部分 -->
+{{extend './common/layout.art'}}
+<!-- 引入链接的css文件 -->
+{{block 'link'}}
+<link rel="stylesheet" href="/home/css/index.css"> {{/block}} {{block 'main'}}
+
+<!-- 这里是将公共头部引入进来 -->
+{{include './common/header.art'}}
+
+<!-- 文章列表开始 -->
+<ul class="list w1100">
+    {{each result.records}}
+    <li class="{{$index%2==0?'fl':'fr'}}">
+        <a href="/home/article?id={{@$value._id}}" class="thumbnail">
+            <img src="{{$value.cover}}">
+        </a>
+        <div class="content">
+            <a class="article-title" href="/home/article?id={{@$value._id}}">{{$value.title}}</a>
+            <div class="article-info">
+                <span class="author">{{$value.author.username}}</span>
+                <span>{{dateFormat( $value.publishDate,'yyyy-mm-dd')}}</span>
+            </div>
+            <div class="brief">
+                <!-- replace内部自带替换方法，全局替换（g）大于等于一次(+)出现的<>以及里面的内容，除了> (^>),-->
+                <!-- .replace(/<[^>]+>/g,'') 没有用-->
+                {{@$value.content.substr(0,90)+'...'}}
+            </div>
+        </div>
+    </li>
+    {{/block}}
+
+</ul>
+<!-- 文章列表结束 -->
+
+<!-- 分页开始 -->
+<div class="page w1100">
+    <!-- 上一页 -->
+    {{if result.page > 1}}
+    <a href="/home/?page={{result.page-1}}">上一页</a> {{/if}}
+    <!-- 遍历页码 -->
+    {{each result.display}}
+    <a href="/home/?page={{$value}}" class="{{$value == result.page ? 'active':''}}">{{$value}}</a> {{/each}}
+    <!-- 下一页 -->
+    {{if result.page
+    < result.pages}} <a href="/home/?page={{result.page-0+1}}">下一页</a>
+        {{/if}}
+</div>
+<!-- 分页结束 -->
+
+{{/block}}
