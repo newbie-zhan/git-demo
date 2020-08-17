@@ -1,0 +1,137 @@
+/* pages/checkorder/checkorder.wxss */
+
+
+.item-container1{
+  display: flex;
+  margin-top: 50rpx;
+  margin-bottom: 10rpx;
+  background-color: #fff;
+}
+.title{
+  font-weight: bold;
+  font-size: 25rpx;
+}
+
+.tt{
+  font-size: 80rpx;
+  background-color: rgb(255, 136, 0);
+
+}
+
+.t1{
+  font-size: 40rpx;
+  color: blue
+}
+.t2{
+  font-size: 40rpx;
+  color: rgb(255, 0, 0);
+  border-width: 2rpx 2rpx rpx 2rpx;
+  border: 1rpx;
+}
+.action{
+  flex: 1;
+}
+.cart{
+  padding:15rpx;
+  background: #EA5149;
+  border-radius: 10rpx;
+  color: rgb(255, 255, 255);
+  width: 50rpx;
+  height: 50rpx;
+  
+}
+.item_num{
+  padding:15rpx;
+  background: whitesmoke;
+  border-radius: 0;
+  color: black;
+  width: 150rpx;
+  justify-content: center;
+  height: 50rpx;
+}
+.product{
+  width: 90%;
+  justify-content: space-around;
+  border-bottom: 1px solid #EA5149;
+}
+.price{
+  color: rgb(255, 187, 0);
+  justify-content: flex-end;
+}
+
+.number{
+  flex: 2;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.image{
+  width:100rpx;
+  height: 100rpx;
+  flex: 1;
+}
+
+.see{
+  font-size: 30rpx;
+  border: 1rpx;
+  border-color:rgba(245, 245, 245, 0.418);
+  border-width: 2rpx 2rpx rpx 2rpx;
+  border-style: solid;
+  top: 20rpx;
+  left: 30rpx;
+  margin-top: 10rpx;
+  
+}
+.seetitle{
+  font-size: 30rpx;
+  border: 1rpx;
+  border-color:red;
+  border-width: 2rpx 2rpx rpx 2rpx;
+  border-style: solid;
+  top: 20rpx;
+  left: 30rpx;
+  margin-top: 20rpx;
+  justify-content: space-between;
+}
+.h1{
+  background-color: whitesmoke;
+}
+.hot{
+  display: block;
+  text-align: center;
+  font-size: 50rpx;
+  margin: 10rpx 0;
+  color: rgb(255, 51, 0);
+  
+
+}
+.time{
+
+  color: rgb(255, 51, 0);
+  
+
+}
+.bu{
+  width:60%;
+  display: flex; 
+  /* flex-direction: row;
+  /* position: absolute;
+  bottom: 0;
+  left: 0;  */
+  background-color: white;
+  border-radius: 15%;
+  justify-content: center;
+  
+}
+.bu button{
+  
+  background-color: rgb(255, 123, 0);
+  width: 50%;
+  color: white;
+  justify-content: center;
+}
+.buy{
+border-radius: 15%;
+color: whitesmoke;
+background-color:rgba(255, 187, 0, 0.986);
+}

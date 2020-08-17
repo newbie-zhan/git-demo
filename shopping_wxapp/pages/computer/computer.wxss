@@ -1,0 +1,80 @@
+/* pages/computer/computer.wxss */
+/* pages/fenye/fenye.wxss */
+/**index.wxss**/
+.item-container{
+  display: flex;
+  margin-top: 100rpx;
+  background-color: whitesmoke;
+}
+.image{
+  width:200rpx;
+  height: 300rpx;
+  flex: 1;
+}
+.content{
+  flex: 2;
+}
+.tit{
+  text-align: center;
+  font-size: 50rpx;
+  color:rgb(255, 205, 213);
+  background-color: rgb(255, 196, 0);
+}
+.price_color{
+  color: red;
+}
+.hot{
+  display: block;
+  text-align: center;
+  font-size: 50rpx;
+  margin: 10rpx 0;
+  color: red;
+  background-color: whitesmoke;
+
+}
+.title{
+  font-weight: bold;
+}
+.action{
+  flex: 1;
+}
+.tag{
+  padding: 0 5rpx;
+  background: #EA5149;
+  border-radius: 20%;
+  margin: 5rpx;
+  color: white;
+  font-size: 28rpx;
+}
+.cart{
+  padding:15rpx;
+  background: #EA5149;
+  border-radius: 50%;
+  color: white;
+  width: 50rpx; 
+}
+.slide-image{
+  width: 750rpx;
+  height: 370rpx;
+  
+}
+
+.index_cate{
+
+  
+  width: 20%;
+  height: 10rpx;
+}
+
+.na{
+  flex: 1;
+}
+.im{
+  width: 100%;
+
+}
+.tt{
+  font-size: 80rpx;
+  background-color: rgb(255, 136, 0);
+
+}
